@@ -1,0 +1,8 @@
+一、本案例笔记
+    1. 蓝图对象的名字和视图名字不能同名，否则导入到注册蓝图时会出错。
+
+    2. 没有下载postman等http请求工具的，可以使用python的requests库测试。但是requests请求后，session不维持的。
+
+    3. tags = Tag.query.filter(Tag.name.in_(tags)).all()
+        in_()：只返回Tag.name中在tags的所有数据，所以用户传递过来的tags可能有数据库没有的东西，但不会报错，也不会添加。
+        但是一个都没有的时候就会报错了。

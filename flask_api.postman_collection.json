@@ -1,0 +1,573 @@
+{
+	"info": {
+		"_postman_id": "eacc695d-9fd8-4db9-8811-973058de5756",
+		"name": "test",
+		"description": "# Introduction\nWhat does your API do?\n\n# Overview\nThings that the developers should know about\n\n# Authentication\nWhat is the preferred way of using the API?\n\n# Error Codes\nWhat errors and status codes can a user expect?\n\n# Rate limit\nIs there a limit to the number of requests an user can send?",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "admin",
+			"item": [
+				{
+					"name": "http://127.0.0.1:9999/api/admin/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"admin\",\n\t\"password\": \"admin\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/admin/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"admin",
+								"login"
+							]
+						},
+						"description": "管理员登录"
+					},
+					"response": [
+						{
+							"name": "Default",
+							"originalRequest": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": ""
+								},
+								"url": {
+									"raw": "http://127.0.0.1:9999/admin/login",
+									"protocol": "http",
+									"host": [
+										"127",
+										"0",
+										"0",
+										"1"
+									],
+									"port": "9999",
+									"path": [
+										"admin",
+										"login"
+									]
+								}
+							},
+							"_postman_previewlanguage": null,
+							"header": null,
+							"cookie": [],
+							"body": ""
+						}
+					]
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/admin/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"test1\",\n\t\"password\": \"test1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/admin/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"admin",
+								"register"
+							]
+						},
+						"description": "管理员注册"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/admin/logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/admin/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"admin",
+								"logout"
+							]
+						},
+						"description": "登录后才能退出登录，否则无效"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/admin/op/tags",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": []
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/admin/op/tags",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"admin",
+								"op",
+								"tags"
+							]
+						},
+						"description": "获取所有标签数据"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/admin/op/tags/1",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/admin/op/tags/7",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"admin",
+								"op",
+								"tags",
+								"7"
+							]
+						},
+						"description": "管理员工具id删除标签"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/admin/op/tags/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"吃货\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/admin/op/tags/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"admin",
+								"op",
+								"tags",
+								"add"
+							]
+						},
+						"description": "管理员添加标签"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/admin/op/messages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/admin/op/messages",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"admin",
+								"op",
+								"messages"
+							]
+						},
+						"description": "管理员获取所有留言"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/admin/op/messages/8",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/admin/op/messages/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"admin",
+								"op",
+								"messages",
+								"8"
+							]
+						},
+						"description": "管理员获取一条留言"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/admin/op/messages/8",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/admin/op/messages/8",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"admin",
+								"op",
+								"messages",
+								"8"
+							]
+						},
+						"description": "管理员删除一条留言"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		},
+		{
+			"name": "user",
+			"item": [
+				{
+					"name": "http://127.0.0.1:9999/api/user/login",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"user1\",\n\t\"password\": \"user1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/user/login",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"user",
+								"login"
+							]
+						},
+						"description": "用户登录"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/user/register",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"name\": \"user1\",\n\t\"password\": \"user1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/user/register",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"user",
+								"register"
+							]
+						},
+						"description": "用户注册"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/user/logout",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/user/logout",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"user",
+								"logout"
+							]
+						},
+						"description": "用户退出登录"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/user/op/messages/add",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"content\":\"想吃海底捞！\",\n\t\"tags\":[\"吃货\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/user/op/messages/add",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"user",
+								"op",
+								"messages",
+								"add"
+							]
+						},
+						"description": "用户发送留言信息"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/user/op/messages",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/user/op/messages",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"user",
+								"op",
+								"messages"
+							]
+						},
+						"description": "用户获取所有信息"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/user/op/messages/history",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/user/op/messages/history",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"user",
+								"op",
+								"messages",
+								"history"
+							]
+						},
+						"description": "获取用户自己发的留言全部信息"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/user/op/messages/3",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/user/op/messages/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"user",
+								"op",
+								"messages",
+								"9"
+							]
+						},
+						"description": "用户获取一条信息"
+					},
+					"response": []
+				},
+				{
+					"name": "http://127.0.0.1:9999/api/user/op/messages/3",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "tag_name",
+									"value": "数学",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://127.0.0.1:9999/api/user/op/messages/9",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "9999",
+							"path": [
+								"api",
+								"user",
+								"op",
+								"messages",
+								"9"
+							]
+						},
+						"description": "用户删除一条记录"
+					},
+					"response": []
+				}
+			],
+			"protocolProfileBehavior": {}
+		}
+	],
+	"protocolProfileBehavior": {}
+}
