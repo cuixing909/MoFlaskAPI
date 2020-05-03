@@ -12,9 +12,15 @@ mysql
 
 ## 项目效果
 
-![r1](F:\Python\Web\Flask\LeaveMessageFlaskAPI\static\imgs\r1.PNG)
+[r1](https://github.com/sheppyy/MoFlaskAPI/blob/master/static/imgs/r1.PNG)
 
-![r1](F:\Python\Web\Flask\LeaveMessageFlaskAPI\static\imgs\r2.PNG)![r1](F:\Python\Web\Flask\LeaveMessageFlaskAPI\static\imgs\r3.PNG)![r1](F:\Python\Web\Flask\LeaveMessageFlaskAPI\static\imgs\r4.PNG)![r1](F:\Python\Web\Flask\LeaveMessageFlaskAPI\static\imgs\r5.PNG)
+![r2](https://github.com/sheppyy/MoFlaskAPI/blob/master/static/imgs/r2.PNG)
+
+![r3](https://github.com/sheppyy/MoFlaskAPI/blob/master/static/imgs/r3.PNG)
+
+![r4](https://github.com/sheppyy/MoFlaskAPI/blob/master/static/imgs/r4.PNG)
+
+![r5](https://github.com/sheppyy/MoFlaskAPI/blob/master/static/imgs/r5.PNG)
 
 ## 本项目，你可以
 
