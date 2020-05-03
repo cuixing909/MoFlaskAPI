@@ -12,7 +12,7 @@ mysql
 
 ## 项目效果
 
-[r1](https://github.com/sheppyy/MoFlaskAPI/blob/master/static/imgs/r1.PNG)
+![r1](https://github.com/sheppyy/MoFlaskAPI/blob/master/static/imgs/r1.PNG)
 
 ![r2](https://github.com/sheppyy/MoFlaskAPI/blob/master/static/imgs/r2.PNG)
 
